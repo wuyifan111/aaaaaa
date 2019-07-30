@@ -23,6 +23,7 @@ public class logcontecontroller {
 
     //这里修改了密码
     //这里是网上修改的代码
+    //idea再次需改密码
     private static List<user> list=new ArrayList<>();
 
     static {
