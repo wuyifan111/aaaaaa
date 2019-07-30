@@ -21,7 +21,7 @@ public class logcontecontroller {
     @Autowired
     private KafkaTemplate KafkaTemplate;
 
-
+    //这里修改了密码
     private static List<user> list=new ArrayList<>();
 
     static {
