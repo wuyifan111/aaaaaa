@@ -22,6 +22,7 @@ public class logcontecontroller {
     private KafkaTemplate KafkaTemplate;
 
     //这里修改了密码
+    //这里是网上修改的代码
     private static List<user> list=new ArrayList<>();
 
     static {
