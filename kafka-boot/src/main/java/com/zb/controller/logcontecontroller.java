@@ -24,6 +24,7 @@ public class logcontecontroller {
     //这里修改了密码
     //这里是网上修改的代码
     //idea再次需改密码
+    //修改代码
     private static List<user> list=new ArrayList<>();
 
     static {
@@ -40,9 +41,11 @@ public class logcontecontroller {
     }
     @GetMapping("/add")
     public String aa(){
+        System.out.println("aaaa");
+
         for (int i=0;i<10;i++){
 
-                    KafkaTemplate.send("deservice","dm","发送的数据-----"+i);
+                    KafkaTemplate.send("dmservice","dm","发送的数据-----"+i);
         }
         return "ok";
     }
