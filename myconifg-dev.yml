@@ -1,0 +1,23 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: my-house-provider
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      suffix: .html
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+    mode: LEGACYHTML5
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: myhouse8002
+    prefer-ip-address: true
+myhouseprovider:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
