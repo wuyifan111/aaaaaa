@@ -28,7 +28,10 @@ public class logcontecontroller {
     private static List<user> list=new ArrayList<>();
 
     static {
+        String name="张三";//TODO
         list.add(new user(1,"张三"));
+
+
         list.add(new user(2,"李四"));
         list.add(new user(3,"王五"));
         list.add(new user(4,"赵六"));
